@@ -95,7 +95,7 @@ function retiro(){
   }
   else{
     document.getElementById("nuevosaldo2").innerText = "Tu nuevo saldo es $" + saldoMod;
-    document.getElementById("saldoShow2").innerText = "Tu saldo es de $" + saldoMod;
+    document.getElementById("saldoShow").innerText = "Tu saldo es de $" + saldoMod;
   }
 
 }
