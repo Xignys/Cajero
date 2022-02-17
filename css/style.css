@@ -1,11 +1,11 @@
-#saldo {
+#saldoShow {
   display: none;
 }
 
-#deposito {
+#depositoShow {
   display: none;
 }
 
-#retiro {
+#retiroShow {
   display: none;
 }

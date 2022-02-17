@@ -7,57 +7,62 @@ const cuentas = [
   {
     nombre: "John",
     password: "456",
-    saldo: 290,
+    saldo: 300,
   },
   {
     nombre: "Gert",
     password: "789",
-    saldo: 67,
+    saldo: 400,
   },
 ];
 
 let nombre;
+let user = document.getElementById("usuario");
+let pass = document.getElementById("password");
 
 function validacion() {
   let ender = 0;
-  let user = document.getElementById("usuario");
-  let pass = document.getElementById("password");
-  let saldo;
 
-  for (property in cuentas) {
+  for (prop in cuentas) {
     if (
-      user.value == cuentas[property].nombre &&
-      pass.value == cuentas[property].password
+      user.value == cuentas[prop].nombre &&
+      pass.value == cuentas[prop].password
     ) {
       nombre = user.value;
+      saldoinicial = cuentas[prop].saldo;
       ender = 1;
-      saldo = cuentas[property].saldo;
-      location.href = "cajero.html";
-      document.getElementById('saldo').innerText = 'Tu saldo es: ' + saldo;
     }
   }
   if (ender == 1) {
     alert(`Bienvenido ${nombre}`);
+    localStorage.setItem("usuario", nombre);
+    localStorage.setItem("saldoInicial", saldoinicial);
+    location.href = "cajero.html";
   } else {
     alert("Usuario y/o contraseña incorrectos");
   }
 }
 
-function consultaSaldo() {
-  document.getElementById("saldo").style.display = "block";
-  document.getElementById("retiro").style.display = "none";
-  document.getElementById("deposito").style.display = "none";
-}
+//Siguiente página
 
+document.getElementById("bienvenida").innerText = "Bienvenido " + localStorage.getItem("usuario");
+document.getElementById("saldo").innerText = "Tu saldo es de $" + localStorage.getItem("saldoInicial");
+
+function consultaSaldo() {
+  document.getElementById("saldoShow").style.display = "block";
+  document.getElementById("retiroShow").style.display = "none";
+  document.getElementById("depositoShow").style.display = "none";
+}
 function depositoSaldo() {
-  document.getElementById("saldo").style.display = "none";
-  document.getElementById("retiro").style.display = "none";
-  document.getElementById("deposito").style.display = "block";
+  document.getElementById("saldoShow").style.display = "none";
+  document.getElementById("retiroShow").style.display = "none";
+  document.getElementById("depositoShow").style.display = "block";
 }
 function retiroSaldo() {
-  document.getElementById("saldo").style.display = "none";
-  document.getElementById("retiro").style.display = "block";
-  document.getElementById("deposito").style.display = "none";
+  document.getElementById("saldoShow").style.display = "none";
+  document.getElementById("retiroShow").style.display = "block";
+  document.getElementById("depositoShow").style.display = "none";
 }
+
 
 

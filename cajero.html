@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajero Automático</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
-        <h1>Bienvenido </h1>
+        <h3 id="bienvenida"></h3>
     </header>
     <main>
-        <button type="button" onclick="consultaSaldo()">Consultar Saldo</button>
-        <button type="button" onclick="depositoSaldo()">Depositar</button>
-        <button type="button" onclick="retiroSaldo()">Retirar</button>
+        <button type="button" onclick="consultaSaldo()">Consulta tu Saldo</button>
+        <button type="button" onclick="depositoSaldo()">Deposita un monto</button>
+        <button type="button" onclick="retiroSaldo()">Retira tu dinero</button>
         <hr>
-        <div id="saldo"> Tu saldo es</div>
-        <div id="deposito">
-            Ingresa el monto
+        <div id="saldoShow"></div>
+        <div id="depositoShow">
+            Ingresa el monto a depositar
+            <input type="number" id="depoSaldo">
+            <button type="button" onclick="deposito()">Aceptar</button>
+            <div id="nuevosaldo"></div>
         </div>
-        <div id="retiro">
-            Ingresa el saldo a retirar
+        <div id="retiroShow">
+            Ingresa el monto a retirar
         </div>
     </main>
     
 </body>
+<script src="js/index.js"></script>
 </html>
