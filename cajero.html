@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cajero Automático</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
+    <link rel="stylesheet" href="css/Login-Form-Dark.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h3 id="bienvenida"></h3>
+      <h3 id="bienvenida"></h3>
     </header>
     <main>
-        <button type="button" onclick="consultaSaldo()">Consulta tu Saldo</button>
-        <button type="button" onclick="depositoSaldo()">Deposita un monto</button>
-        <button type="button" onclick="retiroSaldo()">Retira tu dinero</button>
-        <hr>
-        <div id="saldoShow"></div>
-        <div id="depositoShow">
-            Ingresa el monto a depositar
-            <input type="number" id="depoSaldo">
-            <button type="button" onclick="deposito()">Aceptar</button>
-            <div id="nuevosaldo"></div>
-        </div>
-        <div id="retiroShow">
-            Ingresa el monto a retirar
-            <input type="number" id="retiSaldo">
-            <button type="button" onclick="retiro()">Aceptar</button>
-            <div id="nuevosaldo2"></div>
-        </div>
+        <section class="login-dark">
+                <button type="button" onclick="consultaSaldo()">
+                    Consulta tu Saldo
+                </button>
+                <button type="button" onclick="depositoSaldo()">
+                    Deposita un monto
+                </button>
+                <button type="button" onclick="retiroSaldo()">Retira tu dinero</button>
+                <hr />
+                <div id="saldoShow"></div>
+                <div id="depositoShow">
+                    Ingresa el monto a depositar
+                    <input type="number" id="depoSaldo" />
+                    <button type="button" onclick="deposito()">Aceptar</button>
+                    <div id="nuevosaldo"></div>
+                </div>
+                <div id="retiroShow">
+                    Ingresa el monto a retirar
+                    <input type="number" id="retiSaldo" />
+                    <button type="button" onclick="retiro()">Aceptar</button>
+                    <div id="nuevosaldo2"></div>
+                </div>
+        </section>
     </main>
-</body>
-<script src="js/index.js"></script>
+  </body>
+  <script src="js/index.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </html>
