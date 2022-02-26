@@ -1,6 +1,6 @@
 .login-dark {
   height: 1000px;
-  background: #475d62 url(/cajero/img/star-sky.jpg);
+  background: url(/cajero/img/star-sky.jpg) #475d62;
   background-size: cover;
   position: relative;
 }
