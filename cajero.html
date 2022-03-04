@@ -15,32 +15,38 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="row">
-      <h3 id="bienvenida" class="display-1 border text-center"></h3>
+    <header >
+      <h3 id="bienvenida" class="display-1 text-center"></h3>
+      <hr>
     </header>
     <main>
       <section class="container">
-        <div>
-          <button type="button" onclick="consultaSaldo()">Consulta tu Saldo</button>
-          <button type="button" onclick="depositoSaldo()">Deposita un monto</button>
-          <button type="button" onclick="retiroSaldo()">Retira tu dinero</button>
+        <div class="d-flex justify-content-around">
+          <button type="button" class="btn btn-secondary" onclick="consultaSaldo()">Consulta tu Saldo</button>
+          <button type="button" class="btn btn-secondary" onclick="depositoSaldo()">Deposita un monto</button>
+          <button type="button" class="btn btn-secondary" onclick="retiroSaldo()">Retira tu dinero</button>
         </div>
-          <div id="saldoShow"></div>
-          <div id="depositoShow">
-            <span>Ingresa el monto a depositar</span>
-            <input type="number" id="depoSaldo"/>
-            <button type="button" onclick="deposito()">Aceptar</button>
-            <div id="nuevosaldo"></div>
+        <div class="position-absolute top-50 start-50 translate-middle">
+          
+          <div id="saldoShow" class="text-center display-5"></div>
+
+          <div id="depositoShow" class="text-center">
+            <span class="display-5">Ingresa el monto a depositar</span>
+            <input id="depoSaldo" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <button type="button" class="btn btn-lg btn-secondary" onclick="deposito()">Aceptar</button>
+            <div id="nuevosaldo" class="display-6"></div>
           </div>
-          <div id="retiroShow">
-            <span>Ingresa el monto a retirar</span>
-            <input type="number" id="retiSaldo"/>
-            <button type="button" onclick="retiro()">Aceptar</button>
-            <div id="nuevosaldo2"></div>
+
+          <div id="retiroShow" class="text-center">
+            <span class="display-5">Ingresa el monto a retirar</span>
+            <input id="retiSaldo" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+            <button type="button" class="btn btn-lg btn-secondary" onclick="retiro()">Aceptar</button>
+            <div id="nuevosaldo2" class="display-6"></div>
           </div>
+        </div>
         
       </section>
     </main>
+    <script src="js/index.js"></script>
   </body>
-  <script src="js/index.js"></script>
 </html>

@@ -1,5 +1,5 @@
 body {
-  background-color: #1E2833;
+  background: url(https://i.picsum.photos/id/120/4928/3264.jpg?hmac=i-8mkfKj_gRyQt9ZJVhbIBXbtIBNcsbI_gwNe_39vus) #475d62;
   color: white;
 }
 
@@ -13,4 +13,8 @@ body {
 
 #retiroShow {
   display: none;
+}
+
+.mb {
+  margin-bottom: 50px;
 }
