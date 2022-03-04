@@ -20,31 +20,25 @@
     </header>
     <main>
       <section class="container">
-        <div class="row">
-          <button type="button" class="col" onclick="consultaSaldo()">
-            Consulta tu Saldo
-          </button>
-          <button type="button" class="col" onclick="depositoSaldo()">
-            Deposita un monto
-          </button>
-          <button type="button" class="col" onclick="retiroSaldo()">
-            Retira tu dinero
-          </button>
-          <hr />
+        <div>
+          <button type="button" onclick="consultaSaldo()">Consulta tu Saldo</button>
+          <button type="button" onclick="depositoSaldo()">Deposita un monton</button>
+          <button type="button" onclick="retiroSaldo()">Retira tu dinero</button>
+        </div>
           <div id="saldoShow"></div>
           <div id="depositoShow">
-            Ingresa el monto a depositar
-            <input type="number" id="depoSaldo" />
+            <span>Ingresa el monto a depositar</span>
+            <input type="number" id="depoSaldo"/>
             <button type="button" onclick="deposito()">Aceptar</button>
             <div id="nuevosaldo"></div>
           </div>
           <div id="retiroShow">
-            Ingresa el monto a retirar
-            <input type="number" id="retiSaldo" />
+            <span>Ingresa el monto a retirar</span>
+            <input type="number" id="retiSaldo"/>
             <button type="button" onclick="retiro()">Aceptar</button>
             <div id="nuevosaldo2"></div>
           </div>
-        </div>
+        
       </section>
     </main>
   </body>
