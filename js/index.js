@@ -82,8 +82,8 @@ function deposito(){
   else{
     localStorage.setItem("saldoInicial", saldoMod);
     valorSaldo = Number (localStorage.getItem("saldoInicial"));
-    document.getElementById("nuevosaldo").innerText = "Tu nuevo saldo es de $" + localStorage.getItem("saldoInicial");   //Muestra el saldo  
-    document.getElementById("nuevosaldo2").innerText = "Tu nuevo saldo es de $" + localStorage.getItem("saldoInicial");  //Muestra el saldo 
+    document.getElementById("nuevosaldo").innerText = "Tu saldo es de $" + localStorage.getItem("saldoInicial");   //Muestra el saldo  
+    document.getElementById("nuevosaldo2").innerText = "Tu saldo es de $" + localStorage.getItem("saldoInicial");  //Muestra el saldo 
     document.getElementById("saldoShow").innerText = "Tu saldo es de $" + localStorage.getItem("saldoInicial"); //Muestra el saldo
   }
 
@@ -103,8 +103,8 @@ function retiro(){
 
     localStorage.setItem("saldoInicial", saldoMod);
     valorSaldo = Number(localStorage.getItem("saldoInicial"));
-    document.getElementById("nuevosaldo").innerText = "Tu nuevo saldo es de $" + localStorage.getItem("saldoInicial");
-    document.getElementById("nuevosaldo2").innerText = "Tu nuevo saldo es de $" + localStorage.getItem("saldoInicial");
+    document.getElementById("nuevosaldo").innerText = "Tu saldo es de $" + localStorage.getItem("saldoInicial");
+    document.getElementById("nuevosaldo2").innerText = "Tu saldo es de $" + localStorage.getItem("saldoInicial");
     document.getElementById("saldoShow").innerText = "Tu saldo es de de $" + localStorage.getItem("saldoInicial");
   }
 
