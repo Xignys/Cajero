@@ -110,4 +110,8 @@ function retiro(){
 
 }
 
+function sesionoff(){
+  location.href = "index.html";
+}
+
 
