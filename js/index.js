@@ -1,17 +1,17 @@
 const cuentas = [
   {
-    nombre: "Criss",
-    password: "123",
+    nombre: "Mali",
+    password: "helloworld",
     saldo: 200,
   },
   {
-    nombre: "John",
-    password: "456",
+    nombre: "Gera",
+    password: "l33t",
     saldo: 300,
   },
   {
-    nombre: "Gert",
-    password: "789",
+    nombre: "Maui",
+    password: "123",
     saldo: 400,
   },
 ];
